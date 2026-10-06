@@ -1,0 +1,51 @@
+import * as Localization from 'expo-localization';
+
+const translations = {
+  vi: {
+    appTitle: 'Quản lý Sinh viên',
+    studentList: 'Danh sách sinh viên',
+    addStudent: 'Thêm mới',
+    editStudent: 'Sửa thông tin',
+    detailTitle: 'Thông tin chi tiết',
+    name: 'Họ tên',
+    studentId: 'Mã số SV',
+    email: 'Email',
+    avatar: 'Ảnh đại diện',
+    pickImage: 'Chọn ảnh từ thiết bị',
+    save: 'Lưu',
+    cancel: 'Hủy',
+    confirm: 'Đồng ý',
+    editConfirmTitle: 'Xác nhận sửa',
+    editConfirmMsg: 'Bạn có muốn sửa thông tin SV không?',
+    deleteConfirmTitle: 'Xác nhận xóa',
+    deleteConfirmMsg: 'Bạn có muốn xóa thông tin SV không?',
+    emptyList: 'Chưa có sinh viên nào trong danh sách',
+    validateMsg: 'Vui lòng điền đầy đủ thông tin!',
+    close: 'Đóng',
+  },
+  en: {
+    appTitle: 'Student Management',
+    studentList: 'Student List',
+    addStudent: 'Add Student',
+    editStudent: 'Edit Student',
+    detailTitle: 'Student Details',
+    name: 'Full Name',
+    studentId: 'Student ID',
+    email: 'Email',
+    avatar: 'Avatar',
+    pickImage: 'Pick image from gallery',
+    save: 'Save',
+    cancel: 'Cancel',
+    confirm: 'Confirm',
+    editConfirmTitle: 'Confirm Edit',
+    editConfirmMsg: 'Do you want to update this student information?',
+    deleteConfirmTitle: 'Confirm Delete',
+    deleteConfirmMsg: 'Do you want to delete this student?',
+    emptyList: 'No students found',
+    validateMsg: 'Please fill in all fields!',
+    close: 'Close',
+  },
+};
+
+const deviceLocale = Localization.getLocales()[0]?.languageCode;
+export const t = translations[deviceLocale === 'vi' ? 'vi' : 'en'];

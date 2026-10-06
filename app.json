@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "StudentManagement",
+    "slug": "student-management",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ứng dụng cần quyền truy cập ảnh để chọn avatar sinh viên."
+        }
+      ]
+    ]
+  }
+}
